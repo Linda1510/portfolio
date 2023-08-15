@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Kablammo", cursive;
+    background-image: url("./../../assets/junglebackground.jpg");
+        background-size: cover;
+        background-position: center;
+  }
+@import "./components/header.scss";
