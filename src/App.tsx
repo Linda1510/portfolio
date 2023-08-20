@@ -1,22 +1,25 @@
 
 
+
 import Header from "./components/header";
+import Main from "./components/main";
+
 import "./styles/stles.scss";
+
+
+
+
 
 function App() {
  
 
   return (
-    <>
-      <div className="App">
-       <Header/>
-      </div>
-      
-     
+    <div>
+<Header/>
+<Main/>
+    </div>
+   
+  );
+};
 
-      
-    </>
-  )
-}
-
-export default App
+export default App;
