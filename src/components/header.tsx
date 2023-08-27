@@ -8,10 +8,7 @@ const Header =()=>{
 return <div className="header">
 
    
-    <div className="header__title">
-    <a className="navigation__url" href="/work">My work</a>
-    <a className="navigation__url" href="/get_to_know_me">Get to know me</a>
-    </div>
+    
  <img  src={Jungle} alt="background" />
 <div className="header__card">
 

@@ -1,17 +1,10 @@
 .header{
- background-image: url(./../../assets/junglebackground.jpg);
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
+ 
 
- &__title{
-   
-   background-color: rgb(66, 146, 66);
-   
- }
+
  &__card{
  
-  position: absolute;
+ 
   left: 10rem; 
   top: 10rem; 
   transform: translate(-50%, -50%); 

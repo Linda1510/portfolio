@@ -1,23 +1,19 @@
 
 
 
-import Header from "./components/header";
-import Main from "./components/main";
 
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Register from "./pages/register";
 import "./styles/stles.scss";
 
-
-
-
-
 function App() {
- 
-
-  return (
-    <div>
-<Header/>
-<Main/>
-    </div>
+ return (
+   <div>
+<Home/>
+<Register/>
+<Login/>
+   </div>
    
   );
 };
