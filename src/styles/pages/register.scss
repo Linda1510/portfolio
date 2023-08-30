@@ -1,52 +1,50 @@
-.register{
-    width: 100%;
-    background-color: rgb(163, 232, 210);
-    height: 30rem;
+.register {
+  width: 100%;
+  background-color: rgb(163, 232, 210);
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-    justify-content: center;
-    &__wrapper{
-      
-        background-color: white;
-        padding: 20px 60px;
-        border-radius: 10px;
-        display: flex; 
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    button {
+      background-color: rgb(196, 128, 196);
+      color: white;
+      padding: 0.3rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
     }
-    &__form{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        border-radius: 1rem;
-        button{
-            background-color: rgb(196, 128, 196);
-            color: white;
-            padding: 0.3rem;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-    }
-    p{
-        color: rgb(96, 98, 225);
-        font-size: 0.7rem;
-        margin-top: 0.3rem;
-    }
-    &__logo{
-        color: rgb(138, 76, 138);
-        font-weight: bold;
-        font-size: 3rem;
-    }
-   &__title{
-    color:rgb(138, 76, 138);
+  }
+  p {
+    color: rgb(96, 98, 225);
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+  &__logo {
+    color: rgb(138, 76, 138);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  &__title {
+    color: rgb(138, 76, 138);
     font-size: 1rem;
-   }
-   input{
+  }
+  input {
     padding: 0.5rem;
     border: none;
     border-bottom: 1px solid rgb(138, 76, 138);
-   
-   }
+  }
 }

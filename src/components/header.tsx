@@ -1,25 +1,22 @@
-
-
-import Jungle from "./../assets/junglebackground.jpg";
-
-
-
-const Header =()=>{
-return <div className="header">
-
-   
-    
- <img  src={Jungle} alt="background" />
-<div className="header__card">
-
-<h1>HELLO WORLD!</h1>
- <h2>WELCOME TO MY PAGE!</h2>
- 
+const Header = () => {
+  return (
+    <div className="header">
+        <div className="header__logo">Nikolina</div>
+<div>
+    <ul className="header__links">
+        <li>
+            <a href="#me">ME</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            
+        </li>
+    </ul>
 </div>
-<footer className="header__footer">
+      <h1>HELLO WORLD!</h1>
+      <h2>WELCOME TO MY PAGE!</h2>
 
-</footer>
-
+      <footer className="header__footer"></footer>
     </div>
+  );
 };
 export default Header;
