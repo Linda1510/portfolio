@@ -5,9 +5,10 @@ const Header = () => {
 <div>
     <ul className="header__links">
         <li>
-            <a href="#me">ME</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="home">Home</a>
+            <a href="me">Me</a>
+            <a href="projects">Projects</a>
+            <a href="contact">Contact</a>
             
         </li>
     </ul>
@@ -15,7 +16,7 @@ const Header = () => {
       <h1>HELLO WORLD!</h1>
       <h2>WELCOME TO MY PAGE!</h2>
 
-      <footer className="header__footer"></footer>
+      
     </div>
   );
 };

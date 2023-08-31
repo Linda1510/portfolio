@@ -1,10 +1,12 @@
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
-import Home from "./pages/home";
-import Login from "./pages/login";
-import Register from "./pages/register";
+import Home from "./components/home";
 import "./styles/stles.scss";
 import Header from "./components/header";
-import Navigation from "./components/navigation";
+import Me from "./components/me";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
+import Login from "./pages/login";
+
 
 function App() {
   const router = createBrowserRouter([
@@ -13,12 +15,16 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/login",
-      element: <Login />,
+      path: "/me",
+      element: <Me />,
     },
     {
-      path: "/register",
-      element: <Register />,
+      path: "/projects",
+      element: <Projects />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
     },
     
   ]);
@@ -26,7 +32,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <Navigation/>
+      <Login />
       <RouterProvider router={router}/>
     </div>
   );
