@@ -1,3 +1,18 @@
 .header {
-margin: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 2rem;
+margin-top: 3rem;
+margin-left: 3rem;
+&__logo{
+    margin-right: 5rem;
+    font-size: 2rem;
+    color:rgb(138, 76, 138) ;
+}
+&__links{
+    margin-right: 8rem;
+ 
+    
+}
 }

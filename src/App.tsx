@@ -6,6 +6,7 @@ import Me from "./components/me";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Login from "./pages/login";
+import Register from "./pages/register";
 
 
 function App() {
@@ -26,13 +27,21 @@ function App() {
       path: "/contact",
       element: <Contact />,
     },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
     
   ]);
  
   return (
     <div>
       <Header/>
-      <Login />
+      
       <RouterProvider router={router}/>
     </div>
   );

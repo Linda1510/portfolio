@@ -18,14 +18,9 @@ a
 {
   transition: 300ms ease;
 };
-nav, .nav-links{
-  display: flex;
-}
-nav{
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 @import "./components/header.scss";
 @import "./pages/register.scss";
+@import "./components/home.scss";
