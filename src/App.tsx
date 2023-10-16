@@ -1,50 +1,31 @@
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
-import Home from "./components/home";
-import "./styles/stles.scss";
+import { Route, Routes } from "react-router-dom";
+import Home from "./features/home/home";
 import Header from "./components/header";
 import Me from "./components/me";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Login from "./pages/login";
 import Register from "./pages/register";
-
-
+import "./styles/styles.scss";
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/home",
-      element: <Home />,
-    },
-    {
-      path: "/me",
-      element: <Me />,
-    },
-    {
-      path: "/projects",
-      element: <Projects />,
-    },
-    {
-      path: "/contact",
-      element: <Contact />,
-    },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-    {
-      path: "/register",
-      element: <Register />,
-    },
-    
-  ]);
- 
   return (
-    <div>
-      <Header/>
-      
-      <RouterProvider router={router}/>
-    </div>
+    <>
+      <Header /> 
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="home" element={<Home />}/>
+        <Route path="me" element={<Me />} /> 
+        <Route path="projects" element={<Projects />} /> 
+        <Route path="contact" element={<Contact />} /> 
+        <Route path="login" element={<Login />} /> 
+        <Route path="register" element={<Register />} /> 
+      </Routes>
+    </>
   );
 }
 
 export default App;
+
+
+
+
